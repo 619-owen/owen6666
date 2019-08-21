@@ -32,9 +32,11 @@ def callback():
 def handle_message(event):
 	usersend = event.message.text
 	if usersend == '你好':
-		message = TextSendMessage(text='Hello，歡迎您加入此群組，我是此群組的管理人Owen，這個群組是要協助大家迅速連結到很多自學網，例如: 下面的三大國旗，會分別連結到英文、德文、西班牙文的文法學習網站，自學網不僅有三大語言學習網，還可以輸入以下關鍵字，連結國際型的英檢考試線上試題及學習資源:1. 多益(TOEIC)線上試題-考尚樂2. 托福(TOEFL)試題練習-考滿分3. 雅思(IELTS) 準備練習- IELTS-Exam. net 4.英文知識補充- ThoughtCo. 這些學習資訊皆是Owen親自看過挑選出來，也不保證任何效果，只是協助大家更快速取得資源，提升學習效率，Owen也不會在群組回答大家學習上的問題，請見諒!')
+		message = TextSendMessage(text='Hello，歡迎您加入此群組，我是此群組的管理人Owen，這個群組是要協助大家迅速連結到很多自學網，例如: 下面的三大國旗，會分別連結到英文、德文、西班牙文的文法學習網站，自學網不僅有三大語言學習網，還可以輸入以下關鍵字，連結國際型的英檢考試線上試題及學習資源:1. 多益(TOEIC)線上試題-考尚樂2. 托福(TOEFL)試題練習-考滿分3. 雅思(IELTS) 準備練習- IELTS-Exam. net 4.英文知識補充- ThoughtCo. 　　這些學習資訊皆是Owen親自看過挑選出來，也不保證任何效果，只是協助大家更快速取得資源，提升學習效率，Owen也不會在群組回答大家學習上的問題，請見諒!')
 	elif usersend=='？':
 		message=TextSendMessage(text='Hi,歡迎您的加入,可按選單選取你想學的語言')
+	elif usersend=='多益(TOEIC)線上試題-考尚樂'
+		message=TextSendMessage(text='多益(TOEIC)線上試題-考尚樂在這裡~   https://quizfun.co/courses/2229')
 	else:
 		message=TextSendMessage(text='我看不懂您打什麼，您可以直接複製並輸入您想連結的學習網站～')
 	line_bot_api.reply_message(event.reply_token, message)
