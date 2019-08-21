@@ -44,7 +44,7 @@ def handle_message(event):
 	elif usersend=='4':
 		message=TextSendMessage(text='英文知識補充- ThoughtCo.在這裡~   https://www.thoughtco.com/')
 	else:
-		message=TextSendMessage(text='我看不懂您打什麼，您可以直接複製並輸入您想連結的學習網站～')
+		message=TextSendMessage(text='我看不懂您打什麼，您可以直接輸入您想連結的學習網站編號～')
 	line_bot_api.reply_message(event.reply_token, message)
 
 import os
